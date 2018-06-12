@@ -1,0 +1,36 @@
+a {
+  color:black;
+  text-decoration-style: solid;
+  text-transform: full-width;
+  text-decoration: inherit;
+
+}
+h1 {
+  font-size: 45px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin:0;
+  padding: 10px;
+}
+#grid ol{
+  border-right:1px solid gray;
+  width:200px;
+  margin:0;
+  padding:33px;
+}
+body{
+  margin:0;
+}
+#grid{
+  display:grid;
+  grid-template-columns: 280px 1fr;
+}
+@media(max-width:600px){
+  #grid{
+    display:block;
+
+}
+#grid ol{
+  border-right:none;
+}
+}
